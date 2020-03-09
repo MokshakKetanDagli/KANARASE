@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_back"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".create_user_phone">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="KANARASE"
+                android:textColor="#FFF"
+                android:textSize="20sp" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="CREATE USER"
+                    android:textColor="#FFF"
+                    android:textSize="30sp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textinputlayout_fullname_createuserphone_xml"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15sp"
+                    android:layout_marginTop="15sp"
+                    android:layout_marginRight="15sp"
+                    android:textColorHint="@color/colorAccent"
+                    app:boxStrokeColor="@color/colorAccent"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="25"
+                    app:errorTextAppearance="@color/colorAccent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="FULL NAME"
+                        android:inputType="text"
+                        android:maxLength="25"
+                        android:textColor="#FFF"
+                        android:textColorHighlight="#FFF" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textinputlayout_dob_createuserphone_xml"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15sp"
+                    android:layout_marginRight="15sp"
+                    android:textColorHint="#FFF"
+                    app:boxStrokeColor="#FFF"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="10"
+                    app:errorTextAppearance="@color/colorAccent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="DATE OF BIRTH (DD-MM-YYYY)"
+                        android:inputType="date"
+                        android:maxLength="10"
+                        android:textColor="#FFF"
+                        android:textColorHighlight="#FFF" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Select Country"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@color/colorAccent"/>
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spinner"
+                    android:padding="10dp"
+                    android:layout_marginRight="15sp"
+                    android:layout_marginLeft="15sp"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textinputlayout_phone_createuserphone_xml"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15sp"
+                    android:layout_marginRight="15sp"
+                    android:textColorHint="#FFF"
+                    app:boxStrokeColor="#FFF"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="10"
+                    app:errorTextAppearance="@color/colorAccent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="PHONE"
+                        android:inputType="phone"
+                        android:maxLength="10"
+                        android:textColor="#FFF"
+                        android:textColorHighlight="#FFF" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/buttonsendotpphone_successxml"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15sp"
+                    android:layout_marginRight="15sp"
+                    android:layout_marginBottom="15sp"
+                    android:background="@drawable/my_edittext_back"
+                    android:padding="15dp"
+                    android:text="SEND OTP"
+                    android:textColor="#FFF"
+                    android:textSize="20sp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textinputlayout_otp_createuserphone_xml"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15sp"
+                    android:layout_marginRight="15sp"
+                    android:textColorHint="#FFF"
+                    app:boxStrokeColor="#FFF"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="6"
+                    app:errorTextAppearance="@color/colorAccent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="OTP"
+                        android:inputType="phone"
+                        android:maxLength="6"
+                        android:textColor="#FFF"
+                        android:textColorHighlight="#FFF" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/buttonverifyotpphone_successxml"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15sp"
+                    android:layout_marginRight="15sp"
+                    android:layout_marginBottom="15sp"
+                    android:background="@drawable/my_edittext_back"
+                    android:padding="15dp"
+                    android:text="VERIFY OTP"
+                    android:textColor="#FFF"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textviewuserloginphonepagexml"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="EXISTING USER ? CLICK HERE"
+                    android:textColor="#FFF"
+                    android:padding="15sp"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</LinearLayout>

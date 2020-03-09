@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/youraccountitem"
+        android:title="YOUR ACCOUNT"
+        android:icon="@drawable/ic_account_circle_black_24dp" />
+    <item
+        android:id="@+id/dailyreportitem"
+        android:title="DAILY REPORT"
+        android:icon="@drawable/ic_dailyreport_black_24dp"/>
+    <item
+        android:id="@+id/yourprogressitem"
+        android:title="YOUR PROGRESS"
+        android:icon="@drawable/ic_progress_black_24dp"/>
+    <item
+        android:id="@+id/yourrewardsitem"
+        android:title="YOUR REWARDS"
+        android:icon="@drawable/ic_card_giftcard_black_24dp"/>
+</menu>
